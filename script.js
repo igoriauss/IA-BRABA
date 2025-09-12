@@ -75,4 +75,19 @@ const perguntas=[
 ];
 
 
-]
+let atual = 0;
+let perguntaAtual;
+let historiaFinal="";
+
+
+
+
+function mostraPerguntas(){
+   if (atual >=pergunstas,length){
+       mostraResultados();
+       return;
+   }
+   perguntaAtual=perguntas[atual];
+   caixaPerguntas.textContent = perguntasAtual.enunciado;
+   caixaAlternativas.textContent="";
+   mostraAlternativas();
